@@ -42,6 +42,10 @@ This repository does not claim:
 
 It does not mean formal proof, audit, or assurance of any wider system.
 
+## Standard techniques
+
+This repository uses standard cryptographic and software concepts for demonstration purposes and does not claim ownership over Merkle trees, hashing, inclusion proofs, or tamper-evident logging as general techniques.
+
 ## If this changes
 
 Any future claim beyond this boundary is a separate decision.
