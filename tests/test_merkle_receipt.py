@@ -118,6 +118,19 @@ def test_tampered_record_breaks_verification():
     assert mr.verify_receipt(tampered) is False
 
 
+def test_single_leaf_receipt_tampered_record_still_fails_with_empty_proof():
+    records = load_records()[:1]
+    receipt = mr.make_receipt(records, index=0)
+
+    assert receipt["inclusion_proof"] == []
+    assert mr.verify_receipt(receipt) is True
+
+    tampered = copy.deepcopy(receipt)
+    tampered["record"]["decision"] = "DENY"
+
+    assert mr.verify_receipt(tampered) is False
+
+
 def test_tampered_root_breaks_verification():
     records = load_records()
     receipt = mr.make_receipt(records, index=1)
