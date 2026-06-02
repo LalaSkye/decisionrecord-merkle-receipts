@@ -1,0 +1,23 @@
+{
+  "record": {
+    "id": "DR-0002",
+    "timestamp": "2026-06-02T05:29:00Z",
+    "actor": "HUMAN",
+    "decision": "ALLOW",
+    "subject": "draft README and CLAIM_BOUNDARY only",
+    "in_reply_to": "MSG-1001"
+  },
+  "leaf_hash": "91f8870903a8a197ca299ceae3289df642b7094ab7ae057144073ababbe36387",
+  "leaf_index": 1,
+  "inclusion_proof": [
+    {
+      "side": "left",
+      "hash": "fe0729b9b14c77d12d6bac0ed9d276e7a13a71038355ad3a1c51181976b5c5bf"
+    },
+    {
+      "side": "right",
+      "hash": "e065bf8b2fe193ef650af2d51e5c09a10ab584e6d9a18176262fe4697ad7e657"
+    }
+  ],
+  "merkle_root": "9d771c9fe0d0785d2bee881827bde0093e452c675b3ab01d92a4254ad5ec3bda"
+}
